@@ -1,4 +1,4 @@
-<p>kamu admin</p>
+<p>kamu siswa</p>
 
 <form action="{{ url('logout') }}" method="POST">
     @csrf
