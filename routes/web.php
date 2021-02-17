@@ -14,11 +14,31 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    switch (\Illuminate\Support\Facades\Auth::user()->roles) {
+        case 'ADMIN':
+            return redirect(route('admin'));
+            break;
+        case 'STAFF':
+            return redirect(route('staff'));
+            break;
+        default:
+            redirect(route('welcome'));
+            break;
+    }
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+Route::get('/home', function () {
+    return view('welcome');
+})->name('welcome');
 
-require __DIR__.'/auth.php';
+Route::get('/admin', function () {
+    return view('admin');
+})->middleware(['auth', 'admin'])
+    ->name('admin');
+
+Route::get('/staff', function () {
+    return view('staff');
+})->middleware(['auth', 'staff'])
+    ->name('staff');
+
+require __DIR__ . '/auth.php';
