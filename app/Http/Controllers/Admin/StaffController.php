@@ -41,7 +41,11 @@ class StaffController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+
+        Users::create($data);
+
+        return redirect()->route('data-petugas.index');
     }
 
     /**
@@ -52,7 +56,11 @@ class StaffController extends Controller
      */
     public function show($id)
     {
-        //
+        $item = Users::all()->findOrFail($id);
+
+        return view('pages.staff.detail', [
+            'item' => $item
+        ]);
     }
 
     /**
@@ -63,7 +71,11 @@ class StaffController extends Controller
      */
     public function edit($id)
     {
-        //
+        $item = Users::findOrFail($id);
+
+        return view('pages.staff.edit', [
+            'item' => $item
+        ]);
     }
 
     /**
@@ -75,7 +87,11 @@ class StaffController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = $request->all();
+        $item = Users::findOrFail($id);
+        $item->update($data);
+
+        return redirect()->route('data-petugas.index');
     }
 
     /**
@@ -88,6 +104,6 @@ class StaffController extends Controller
     {
         $item = Users::findOrFail($id);
         $item->delete();
-        return redirect()->route('data-siswa.index');
+        return redirect()->route('data-petugas.index');
     }
 }

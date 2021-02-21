@@ -34,7 +34,7 @@
                         <h4>Kelas</h4>
                     </div>
                     <div class="card-body">
-                        {{ DB::table('class')->count() }}
+                        {{ DB::table('classes')->count() }}
                     </div>
                 </div>
             </div>

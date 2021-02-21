@@ -16,7 +16,7 @@
                 <span>Siswa</span></a>
             <ul class="dropdown-menu">
                 <li><a class="nav-link" href="{{ route('data-siswa.index') }}">Data Siswa</a></li>
-                <li><a class="nav-link" href="bootstrap-badge.html">Tambah Data Siswa</a></li>
+                <li><a class="nav-link" href="{{ route('data-siswa.create') }}">Tambah Data Siswa</a></li>
             </ul>
         </li>
         <li class="menu-header">Pengelolaan Data Kelas</li>
@@ -24,17 +24,17 @@
             <a href="#" class="nav-link has-dropdown"><i class="fas fa-user-friends"></i>
                 <span>Kelas</span></a>
             <ul class="dropdown-menu">
-                <li><a class="nav-link" href="bootstrap-alert.html">Data Kelas</a></li>
-                <li><a class="nav-link" href="bootstrap-badge.html">Tambah Data Kelas</a></li>
+                <li><a class="nav-link" href="{{ route('data-kelas.index') }}">Data Kelas</a></li>
+                <li><a class="nav-link" href="{{ route('data-kelas.create') }}">Tambah Data Kelas</a></li>
             </ul>
         </li>
-        <li class="menu-header">Pengelolaan Data Petugas</li>
+        <li class=" menu-header">Pengelolaan Data Petugas</li>
         <li class="nav-item dropdown">
             <a href="#" class="nav-link has-dropdown"><i class="fas fa-chalkboard-teacher"></i>
                 <span>Petugas</span></a>
             <ul class="dropdown-menu">
-                <li><a class="nav-link" href="bootstrap-alert.html">Data Petugas</a></li>
-                <li><a class="nav-link" href="bootstrap-badge.html">Tambah Data Petugas</a></li>
+                <li><a class="nav-link" href="{{ route('data-petugas.index') }}">Data Petugas</a></li>
+                <li><a class="nav-link" href="{{ route('data-petugas.create') }}">Tambah Data Petugas</a></li>
             </ul>
         </li>
         <li class="menu-header">Pengelolaan Data SPP</li>

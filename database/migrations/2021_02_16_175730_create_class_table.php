@@ -15,7 +15,7 @@ class CreateClassesTable extends Migration
     {
         Schema::create('classes', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('class_id');
+            $table->string('class_id');
             $table->string('class_name');
             $table->string('skill_competence');
             $table->softDeletes();

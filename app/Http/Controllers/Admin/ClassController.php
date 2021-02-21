@@ -41,7 +41,11 @@ class ClassController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+
+        Classes::create($data);
+
+        return redirect()->route('data-kelas.index');
     }
 
     /**
@@ -52,7 +56,11 @@ class ClassController extends Controller
      */
     public function show($id)
     {
-        //
+        $item = Classes::all()->findOrFail($id);
+
+        return view('pages.class.detail', [
+            'item' => $item
+        ]);
     }
 
     /**
@@ -63,7 +71,11 @@ class ClassController extends Controller
      */
     public function edit($id)
     {
-        //
+        $item = Classes::findOrFail($id);
+
+        return view('pages.class.edit', [
+            'item' => $item
+        ]);
     }
 
     /**
@@ -75,7 +87,11 @@ class ClassController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = $request->all();
+        $item = Classes::findOrFail($id);
+        $item->update($data);
+
+        return redirect()->route('data-kelas.index');
     }
 
     /**

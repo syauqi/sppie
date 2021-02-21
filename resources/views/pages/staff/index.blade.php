@@ -26,6 +26,7 @@
                                 <th scope="col">ID</th>
                                 <th scope="col">NAMA</th>
                                 <th scope="col">USERNAME</th>
+                                <th scope="col">EMAIL</th>
                                 <th scope="col">OPSI</th>
                             </tr>
                         </thead>
@@ -40,6 +41,9 @@
                                 </td>
                                 <td>
                                     {{ $item->username }}
+                                </td>
+                                <td>
+                                    {{ $item->email }}
                                 </td>
                                 <td>
                                     <a href="{{ route('data-petugas.show', $item->id) }}" class="btn btn-primary">

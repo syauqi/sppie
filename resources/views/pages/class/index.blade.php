@@ -5,14 +5,14 @@
 <section class="section">
     <div class="card">
         <div class="card-body">
-            <h2 class="card-title text-dark">Pengelolaan Data Petugas Sppie</h2>
+            <h2 class="card-title text-dark">PENGELOLAAN DATA KELAS</h2>
             <hr>
             <p class="card-text"> After I ran into Helen at a restaurant, I realized she was just office
                 pretty drop-dead date put in in a deck for our standup today. Who's responsible for the ask
                 for this request? who's responsible for the ask for this request? but moving the goalposts
                 gain traction. </p>
             <a href="#" class="btn btn-primary">Tambah
-                Data Petugas ⭢ </a>
+                Data Kelas ⭢ </a>
         </div>
     </div>
 
@@ -24,7 +24,9 @@
                         <thead class="thead-light">
                             <tr>
                                 <th scope="col">ID</th>
-                                <th scope="col">Kelas</th>
+                                <th scope="col">ID KELAS</th>
+                                <th scope="col">KELAS</th>
+                                <th scope="col">KOMPETENSI KEAHLIAN</th>
                                 <th scope="col">OPSI</th>
                             </tr>
                         </thead>
@@ -35,7 +37,13 @@
                                     {{ $item->id }}
                                 </th>
                                 <td>
+                                    {{ $item->class_id }}
+                                </td>
+                                <td>
                                     {{ $item->class_name }}
+                                </td>
+                                <td>
+                                    {{ $item->skill_competence }}
                                 </td>
                                 <td>
                                     <a href="{{ route('data-kelas.show', $item->id) }}" class="btn btn-primary">

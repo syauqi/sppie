@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Users;
-
+use Illuminate\Support\Facades\Hash;
 
 class StudentController extends Controller
 {
@@ -30,7 +30,7 @@ class StudentController extends Controller
      */
     public function create()
     {
-        return view('pages.admin.student.create');
+        return view('pages.student.create');
     }
 
     /**
@@ -41,7 +41,11 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+
+        Users::create($data);
+
+        return redirect()->route('data-siswa.index');
     }
 
     /**
@@ -52,7 +56,11 @@ class StudentController extends Controller
      */
     public function show($id)
     {
-        //
+        $item = Users::all()->findOrFail($id);
+
+        return view('pages.student.detail', [
+            'item' => $item
+        ]);
     }
 
     /**
@@ -63,7 +71,11 @@ class StudentController extends Controller
      */
     public function edit($id)
     {
-        //
+        $item = Users::findOrFail($id);
+
+        return view('pages.student.edit', [
+            'item' => $item
+        ]);
     }
 
     /**
@@ -75,7 +87,11 @@ class StudentController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = $request->all();
+        $item = Users::findOrFail($id);
+        $item->update($data);
+
+        return redirect()->route('data-siswa.index');
     }
 
     /**
