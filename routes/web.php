@@ -25,13 +25,16 @@ Route::get('/', function () {
 })
     ->middleware(['auth']);
 
-Route::prefix('admin')->group(function () {
-    Route::get('/dashboard', function () {
-        return view('admin');
-    })
-        ->middleware(['auth', 'admin'])
-        ->name('admin');;
-});
+Route::prefix('admin')
+    ->middleware(['auth', 'admin'])
+    ->group(function () {
+        Route::get('/dashboard', 'App\Http\Controllers\Admin\DashboardController@index')
+            ->name('admin');
+
+        Route::resource('data-siswa', 'App\Http\Controllers\Admin\StudentController');
+        Route::resource('data-petugas', 'App\Http\Controllers\Admin\StaffController');
+        Route::resource('data-kelas', 'App\Http\Controllers\Admin\ClassController');
+    });
 
 Route::prefix('staff')->group(function () {
     Route::get('/dashboard', function () {
