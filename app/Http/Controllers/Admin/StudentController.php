@@ -18,7 +18,7 @@ class StudentController extends Controller
     {
         $items = Users::where('roles', 'STUDENT')->get();
 
-        return view('pages.student.index', [
+        return view('pages.admin.student.index', [
             'items' => $items
         ]);
     }
@@ -30,7 +30,7 @@ class StudentController extends Controller
      */
     public function create()
     {
-        return view('pages.student.create');
+        return view('pages.admin.student.create');
     }
 
     /**
@@ -56,9 +56,9 @@ class StudentController extends Controller
      */
     public function show($id)
     {
-        $item = Users::all()->findOrFail($id);
+        $item = Users::findOrFail($id);
 
-        return view('pages.student.detail', [
+        return view('pages.admin.student.detail', [
             'item' => $item
         ]);
     }
@@ -73,7 +73,7 @@ class StudentController extends Controller
     {
         $item = Users::findOrFail($id);
 
-        return view('pages.student.edit', [
+        return view('pages.admin.student.edit', [
             'item' => $item
         ]);
     }

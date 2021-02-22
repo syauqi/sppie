@@ -18,7 +18,7 @@ class StaffController extends Controller
     {
         $items = Users::where('roles', 'STAFF')->get();
 
-        return view('pages.staff.index', [
+        return view('pages.admin.staff.index', [
             'items' => $items
         ]);
     }
@@ -30,7 +30,7 @@ class StaffController extends Controller
      */
     public function create()
     {
-        return view('pages.staff.create');
+        return view('pages.admin.staff.create');
     }
 
     /**
@@ -58,7 +58,7 @@ class StaffController extends Controller
     {
         $item = Users::all()->findOrFail($id);
 
-        return view('pages.staff.detail', [
+        return view('pages.admin.staff.detail', [
             'item' => $item
         ]);
     }
@@ -73,7 +73,7 @@ class StaffController extends Controller
     {
         $item = Users::findOrFail($id);
 
-        return view('pages.staff.edit', [
+        return view('pages.admin.staff.edit', [
             'item' => $item
         ]);
     }

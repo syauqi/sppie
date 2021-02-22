@@ -18,7 +18,7 @@ class ClassController extends Controller
     {
         $items = Classes::all();
 
-        return view('pages.class.index', [
+        return view('pages.admin.class.index', [
             'items' => $items
         ]);
     }
@@ -30,7 +30,7 @@ class ClassController extends Controller
      */
     public function create()
     {
-        return view('pages.class.create');
+        return view('pages.admin.class.create');
     }
 
     /**
@@ -58,7 +58,7 @@ class ClassController extends Controller
     {
         $item = Classes::all()->findOrFail($id);
 
-        return view('pages.class.detail', [
+        return view('pages.admin.class.detail', [
             'item' => $item
         ]);
     }
@@ -73,7 +73,7 @@ class ClassController extends Controller
     {
         $item = Classes::findOrFail($id);
 
-        return view('pages.class.edit', [
+        return view('pages.admin.class.edit', [
             'item' => $item
         ]);
     }

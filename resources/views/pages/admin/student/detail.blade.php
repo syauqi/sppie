@@ -1,4 +1,4 @@
-@extends('layouts.admin')
+@extends('layouts.admin.dashboard')
 
 @section('content')
 
@@ -12,7 +12,7 @@
                     drop-dead date put in in a deck for our standup today. Who's responsible for the ask for this
                     request? who's responsible for the ask for this request? but moving the goalposts gain traction.
                 </p>
-                <a href="#detail" class="btn btn-success">Saya paham dan
+                <a href="#detail" class="btn btn-primary">Saya paham dan
                     ingin melanjutkan ⭢</a>
             </div>
         </div>

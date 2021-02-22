@@ -1,18 +1,18 @@
-@extends('layouts.dashboard')
+@extends('layouts.admin.dashboard')
 
 @section('content')
 
 <section class="section">
     <div class="card">
         <div class="card-body">
-            <h2 class="card-title text-dark">PENGELOLAAN DATA KELAS</h2>
+            <h2 class="card-title text-dark">Pengelolaan Data Petugas Sppie</h2>
             <hr>
             <p class="card-text"> After I ran into Helen at a restaurant, I realized she was just office
                 pretty drop-dead date put in in a deck for our standup today. Who's responsible for the ask
                 for this request? who's responsible for the ask for this request? but moving the goalposts
                 gain traction. </p>
             <a href="#" class="btn btn-primary">Tambah
-                Data Kelas ⭢ </a>
+                Data Petugas ⭢ </a>
         </div>
     </div>
 
@@ -24,9 +24,9 @@
                         <thead class="thead-light">
                             <tr>
                                 <th scope="col">ID</th>
-                                <th scope="col">ID KELAS</th>
-                                <th scope="col">KELAS</th>
-                                <th scope="col">KOMPETENSI KEAHLIAN</th>
+                                <th scope="col">NAMA</th>
+                                <th scope="col">USERNAME</th>
+                                <th scope="col">EMAIL</th>
                                 <th scope="col">OPSI</th>
                             </tr>
                         </thead>
@@ -37,22 +37,22 @@
                                     {{ $item->id }}
                                 </th>
                                 <td>
-                                    {{ $item->class_id }}
+                                    {{ $item->name }}
                                 </td>
                                 <td>
-                                    {{ $item->class_name }}
+                                    {{ $item->username }}
                                 </td>
                                 <td>
-                                    {{ $item->skill_competence }}
+                                    {{ $item->email }}
                                 </td>
                                 <td>
-                                    <a href="{{ route('data-kelas.show', $item->id) }}" class="btn btn-primary">
+                                    <a href="{{ route('data-petugas.show', $item->id) }}" class="btn btn-primary">
                                         <i class="fa fa-eye"></i>
                                     </a>
-                                    <a href="{{ route('data-kelas.edit', $item->id) }}" class="btn btn-info">
+                                    <a href="{{ route('data-petugas.edit', $item->id) }}" class="btn btn-info">
                                         <i class="fa fa-pencil-alt"></i>
                                     </a>
-                                    <form action="{{ route('data-kelas.destroy', $item->id) }}" method="POST"
+                                    <form action="{{ route('data-petugas.destroy', $item->id) }}" method="POST"
                                         class="d-inline">
                                         @csrf
                                         @method('delete')

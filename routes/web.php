@@ -36,20 +36,22 @@ Route::prefix('admin')
         Route::resource('data-kelas', 'App\Http\Controllers\Admin\ClassController');
     });
 
-Route::prefix('staff')->group(function () {
-    Route::get('/dashboard', function () {
-        return view('staff');
-    })
-        ->middleware(['auth', 'staff'])
-        ->name('staff');;
-});
+Route::prefix('staff')
+    ->middleware(['auth', 'staff'])
+    ->group(function () {
+        Route::get('/dashboard', 'App\Http\Controllers\Staff\DashboardController@index')
+            ->name('staff');
 
-Route::prefix('student')->group(function () {
-    Route::get('/dashboard', function () {
-        return view('student');
-    })
-        ->middleware(['auth', 'student'])
-        ->name('student');
-});
+        Route::resource('data-spp', 'App\Http\Controllers\Student\ClassController');
+    });
+
+Route::prefix('student')
+    ->middleware(['auth', 'student'])
+    ->group(function () {
+        Route::get('/dashboard', 'App\Http\Controllers\Student\DashboardController@index')
+            ->name('student');
+
+        Route::resource('data-spp', 'App\Http\Controllers\Student\ClassController');
+    });
 
 require __DIR__ . '/auth.php';
