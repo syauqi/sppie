@@ -10,6 +10,6 @@ class Payments extends Model
     use HasFactory;
 
     protected $fillable = [
-        'id', 'class_id', 'class_name', 'skill_competence'
+    'id_spp', 'id_user', 'month', 'total_payment'
     ];
 }

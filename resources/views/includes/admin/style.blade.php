@@ -8,3 +8,5 @@
 <!-- Template CSS -->
 <link rel="stylesheet" href="{{ url('stisla/assets/css/style.css')}}">
 <link rel="stylesheet" href="{{ url('stisla/assets/css/components.css')}}">
+{{-- Lottie JS --}}
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>

@@ -3,6 +3,17 @@
 @section('title', 'Dashboard Admin')
 @section('content')
 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var calendarEl = document.getElementById('calendar');
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth'
+      });
+      calendar.render();
+    });
+
+</script>
+
 <section class="section">
     <div class="row">
         <div class="col-lg-3 col-md-6 col-sm-6 col-12">
@@ -60,33 +71,84 @@
                         <h4>Transaksi</h4>
                     </div>
                     <div class="card-body">
-                        {{ DB::table('payment')->count() }}
+                        {{ DB::table('payments')->count() }}
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-md-8">
-            <div class="card bg-danger">test</div>
-        </div>
+    <div class="row mb-4">
         <div class="col-md-4">
-            <div class="card bg-primary">test</div>
+            <div class="card card-primary">
+                <div class="card-header">
+                    <h4>Selamat Datang, {{ Auth::user()->name }}!</h4>
+                </div>
+                <div class="card-body">
+                    <p>Jika anda ingin segera melakukan pembayaran atau melakukan transaksi SPP silahkan klik disini</p>
+                    <a href="" class="btn btn-primary btn-pill">Tambah Transaksi →</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="table-responsive bg-white p-4">
+                <table id="example" class="table table-light align-items-center table-flush">
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">NISN</th>
+                            <th scope="col">NAMA</th>
+                            <th scope="col">USERNAME</th>
+                            <th scope="col">EMAIL</th>
+                            <th scope="col">KELAS</th>
+                            <th scope="col">OPSI</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @forelse ($items as $item)
+                        <tr>
+                            <th scope="row">
+                                {{ $item->id }}
+                            </th>
+                            <td>
+                                {{ $item->nisn }}
+                            </td>
+                            <td>
+                                {{ $item->name }}
+                            </td>
+                            <td>
+                                {{ $item->username }}
+                            </td>
+                            <td>
+                                {{ $item->email }}
+                            </td>
+                            <td>
+                                {{ $item->class }}
+                            </td>
+                            <td>
+                                <a href="{{ route('data-siswa.show', $item->id) }}" class="btn btn-primary">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                                <a href="{{ route('data-siswa.edit', $item->id) }}" class="btn btn-info">
+                                    <i class="fa fa-pencil-alt"></i>
+                                </a>
+                                <form action="{{ route('data-siswa.destroy', $item->id) }}" method="POST"
+                                    class="d-inline">
+                                    @csrf
+                                    @method('delete')
+                                    <button class="btn btn-danger">
+                                        <i class="fa fa-trash"></i>
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+                        @empty
+                        @endforelse
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
-
-    <div class="card" style="width:100%;">
-        <div class="card-body">
-            <h2 class="card-title text-dark">Melakukan pembayaran?</h2>
-            <hr>
-            <p class=" card-text">Anda dapat menambahkan transaksi atau pembayaran SPP dengan cepat melalui tombol
-                dibawah atau tombol disamping. Transaksi yang telah anda lakukan, akan langsung diproses dan bukti
-                laporan akan dapat anda cetak disana. </p>
-            <a href="#" class="btn btn-primary">Tambah transaksi ⭢</a>
-        </div>
-    </div>
-
 </section>
 
 @endsection
