@@ -84,7 +84,7 @@
                             <div class="mb-5 pb-3">
                                 <h1 class="mb-2 display-4 font-weight-bold">Selamat datang!</h1>
                                 <h5 class="font-weight-normal text-muted-transparent">Silahkan login untuk masuk ke
-                                    halaman dasboard.</h5>
+                                    halaman dashboard.</h5>
                             </div>
                             Photo by <a class="text-light bb" target="_blank"
                                 href="https://unsplash.com/photos/a8lTjWJJgLA">Justin Kauffman</a> on <a
