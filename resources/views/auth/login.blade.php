@@ -4,17 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Sppie &mdash; Login</title>
-
+    <title>SPPIE &mdash; Login </title>
     <!-- General CSS Files -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
-    <!-- CSS Libraries -->
-    <link rel="stylesheet" href="../node_modules/bootstrap-social/bootstrap-social.css">
-
     <!-- Template CSS -->
     <link rel="stylesheet" href="{{ url('stisla/assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ url('stisla/assets/css/components.css') }}">
@@ -31,7 +26,7 @@
                         <h4 class="text-dark font-weight-normal">Selamat datang di <span
                                 class="font-weight-bold">Sppie</span>
                         </h4>
-                        <p class="text-muted">Sebelum Anda memulai, Anda harus masuk dengan username dan password yang
+                        <p class="text-muted">Sebelum Anda memulai, anda harus masuk dengan username dan password yang
                             telah disediakan.</p>
                         <!-- Session Status -->
                         <x-auth-session-status class="mb-4" :status="session('status')" />
