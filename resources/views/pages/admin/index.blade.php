@@ -3,17 +3,6 @@
 @section('title', 'Dashboard Admin')
 @section('content')
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var calendarEl = document.getElementById('calendar');
-      var calendar = new FullCalendar.Calendar(calendarEl, {
-        initialView: 'dayGridMonth'
-      });
-      calendar.render();
-    });
-
-</script>
-
 <section class="section">
     <div class="row">
         <div class="col-lg-3 col-md-6 col-sm-6 col-12">
