@@ -29,16 +29,22 @@
                             @forelse ($items as $item)
                             <tr>
                                 <th scope="row">
-                                    {{ $item->id_spp }}
+                                    {{ $item->id }}
                                 </th>
                                 <td>
-                                    {{ $item->id_user }}
+                                    {{ $item->nisn }}
                                 </td>
                                 <td>
-                                    {{ $item->month }}
+                                    {{ $item->name }}
                                 </td>
                                 <td>
-                                    {{ $item->total_payment }}
+                                    {{ $item->username }}
+                                </td>
+                                <td>
+                                    {{ $item->email }}
+                                </td>
+                                <td>
+                                    {{ $item->class }}
                                 </td>
                                 <td>
                                     <a href="{{ route('data-siswa.show', $item->id) }}" class="btn btn-primary">

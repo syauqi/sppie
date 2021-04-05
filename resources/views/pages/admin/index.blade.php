@@ -85,50 +85,29 @@
                     <thead class="thead-light">
                         <tr>
                             <th scope="col">ID</th>
-                            <th scope="col">NISN</th>
-                            <th scope="col">NAMA</th>
-                            <th scope="col">USERNAME</th>
-                            <th scope="col">EMAIL</th>
-                            <th scope="col">KELAS</th>
-                            <th scope="col">OPSI</th>
+                            <th scope="col">ID USER</th>
+                            <th scope="col">BULAN</th>
+                            <th scope="col">TOTAL BAYAR</th>
+                            <th scope="col">KETERANGAN</th>
                         </tr>
                     </thead>
                     <tbody>
                         @forelse ($items as $item)
                         <tr>
                             <th scope="row">
-                                {{ $item->id }}
+                                {{ $item->id_spp }}
                             </th>
                             <td>
-                                {{ $item->nisn }}
+                                {{ $item->id_user }}
                             </td>
                             <td>
-                                {{ $item->name }}
+                                {{ $item->month }}
                             </td>
                             <td>
-                                {{ $item->username }}
+                                {{ $item->total_payment }}
                             </td>
                             <td>
-                                {{ $item->email }}
-                            </td>
-                            <td>
-                                {{ $item->class }}
-                            </td>
-                            <td>
-                                <a href="{{ route('data-siswa.show', $item->id) }}" class="btn btn-primary">
-                                    <i class="fa fa-eye"></i>
-                                </a>
-                                <a href="{{ route('data-siswa.edit', $item->id) }}" class="btn btn-info">
-                                    <i class="fa fa-pencil-alt"></i>
-                                </a>
-                                <form action="{{ route('data-siswa.destroy', $item->id) }}" method="POST"
-                                    class="d-inline">
-                                    @csrf
-                                    @method('delete')
-                                    <button class="btn btn-danger">
-                                        <i class="fa fa-trash"></i>
-                                    </button>
-                                </form>
+
                             </td>
                         </tr>
                         @empty
