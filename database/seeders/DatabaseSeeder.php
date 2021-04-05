@@ -16,6 +16,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        // Adding user that has admin roles
         DB::table('users')->insert([
             'name' => 'Admin',
             'username' => 'admin',
@@ -23,15 +24,19 @@ class DatabaseSeeder extends Seeder
             'password' => Hash::make('123456'),
             'roles' => 'ADMIN',
         ]);
-
+        // Adding user that has student roles
         DB::table('users')->insert([
+            'nisn' => '181910575',
+            'address' => 'Jl RA Kartini 26 Ventura Bldg Lt 8,Cilandak Barat',
+            'phone_number' => '0217504417',
+            'class' => 'XII — RPL',
             'name' => 'Syauqizaidan Khairan Khalaf',
             'username' => 'syauqi@sppie.com',
             'email' => 'syauqi@sppie.com',
             'password' => Hash::make('123456'),
             'roles' => 'STUDENT',
         ]);
-
+        // Adding user that has staff roles
         DB::table('users')->insert([
             'name' => 'Tatang Suherman',
             'username' => 'tatang@sppie.com',
