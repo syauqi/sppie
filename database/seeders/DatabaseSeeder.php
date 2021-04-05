@@ -38,9 +38,9 @@ class DatabaseSeeder extends Seeder
         ]);
         // Adding user that has staff roles
         DB::table('users')->insert([
-            'name' => 'Tatang Suherman',
-            'username' => 'tatang@sppie.com',
-            'email' => 'tatang@sppie.com',
+            'name' => 'Staff',
+            'username' => 'staff@sppie.com',
+            'email' => 'staff@sppie.com',
             'password' => Hash::make('123456'),
             'roles' => 'STAFF',
         ]);
