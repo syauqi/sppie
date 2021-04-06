@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Users;
+use App\Models\Classes;
 use Illuminate\Support\Facades\Hash;
 
 class StudentController extends Controller
@@ -30,7 +31,11 @@ class StudentController extends Controller
      */
     public function create()
     {
-        return view('pages.admin.student.create');
+        $classes = Classes::pluck('class_name');
+
+        return view('pages.admin.student.create', [
+            'classes' => $classes,
+        ]);
     }
 
     /**

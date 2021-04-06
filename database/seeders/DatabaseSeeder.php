@@ -44,5 +44,23 @@ class DatabaseSeeder extends Seeder
             'password' => Hash::make('123456'),
             'roles' => 'STAFF',
         ]);
+        // Adding RPL class seeder
+        DB::table('classes')->insert([
+            'class_id' => 'RPL001',
+            'class_name' => 'XII — RPL',
+            'skill_competence' => 'REKAYASA PERANGKAT LUNAK',
+        ]);
+        // Adding MM class seeder
+        DB::table('classes')->insert([
+            'class_id' => 'MM001',
+            'class_name' => 'XII — MM',
+            'skill_competence' => 'MULTIMEDIA',
+        ]);
+        // Adding Akuntansi class seeder
+        DB::table('classes')->insert([
+            'class_id' => 'AK001',
+            'class_name' => 'XII — AK',
+            'skill_competence' => 'AKUNTANSI',
+        ]);
     }
 }
