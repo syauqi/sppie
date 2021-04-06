@@ -1,5 +1,6 @@
 @extends('layouts.admin.dashboard')
 
+@section('title', 'Update Data Siswa')
 @section('content')
 
 
@@ -7,14 +8,12 @@
     <div class="">
         <div class="card" style="width:100%;">
             <div class="card-body">
-                <h2 class="card-title" style="color: black;">Update Data Siswa</h2>
+                <h2 class="card-title" style="color: black;">UPDATE DATA SISWA</h2>
                 <hr>
-                <p class="card-text"> Update data siswa meliputi Email dan Nama Lengkap.
-                    Kita tidak bisa mengubah password guru, Hanya guru yang dapat mengubah passwordnya
-                    sendiri.
+                <p class="card-text"> Disini anda dapat mengupdate data siswa yang sebelumnya anda pilih. Perlu
+                    diketahui admin tidak dapat mengganti password siswa, hanya dapat mengganti data data yang tertera
+                    dibawah.
                 </p>
-                <a href="#detail" class="btn btn-primary">Saya paham dan
-                    ingin melanjutkan ⭢</a>
             </div>
         </div>
     </div>
@@ -68,7 +67,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="btn btn-primary btn-block"> simpan</button>
+                    <button type="submit" class="btn btn-primary btn-block">Simpan</button>
                 </div>
             </form>
         </div>

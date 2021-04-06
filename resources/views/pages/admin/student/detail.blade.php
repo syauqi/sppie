@@ -6,7 +6,7 @@
 <section class="section">
     <div class="card" style="width:100%;">
         <div class="card-body">
-            <h2 class="card-title" style="color: black;">Detail Siswa — {{ $item->name }} </h2>
+            <h2 class="card-title text-uppercase" style="color: black;">Detail Siswa — {{ $item->name }} </h2>
             <hr>
             <p class="card-text"> Berikut adalah detail siswa dari siswa yang bernama {{$item->name}}. Detail
                 meliputi NISN, Nama Lengkap, Username, Email, Alamat, Nomor Telepon & Kelas.
