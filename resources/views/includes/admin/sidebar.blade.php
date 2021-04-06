@@ -1,17 +1,17 @@
 <aside id="sidebar-wrapper">
     <div class="sidebar-brand">
-        <a href="index.html">SPPIE</a>
+        <a href="{{route('admin')}}">SPPIE</a>
     </div>
     <div class="sidebar-brand sidebar-brand-sm">
-        <a href="index.html">St</a>
+        <a href="{{route('admin')}}">SPP</a>
     </div>
     <ul class="sidebar-menu">
         <li class="menu-header">Dashboard</li>
-        <li class="nav-item dropdown active">
+        <li class="nav-item dropdown {{ set_active(['admin']) }}">
             <a href="{{ route('admin')}}" class="nav-link"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
         </li>
         <li class="menu-header">Pengelolaan Data Siswa</li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown {{ set_active(['data-siswa.*']) }}">
             <a href="#" class="nav-link has-dropdown"><i class="fas fa-user"></i>
                 <span>Siswa</span></a>
             <ul class="dropdown-menu">
@@ -20,7 +20,7 @@
             </ul>
         </li>
         <li class="menu-header">Pengelolaan Data Kelas</li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown {{ set_active(['data-kelas.*']) }}">
             <a href="#" class="nav-link has-dropdown"><i class="fas fa-user-friends"></i>
                 <span>Kelas</span></a>
             <ul class="dropdown-menu">
@@ -29,7 +29,7 @@
             </ul>
         </li>
         <li class=" menu-header">Pengelolaan Data Petugas</li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown {{ set_active(['data-petugas.*']) }}">
             <a href="#" class="nav-link has-dropdown"><i class="fas fa-chalkboard-teacher"></i>
                 <span>Petugas</span></a>
             <ul class="dropdown-menu">
@@ -38,7 +38,7 @@
             </ul>
         </li>
         <li class="menu-header">Pengelolaan Data SPP</li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown" {{ set_active(['data-spp.*']) }}>
             <a href="#" class="nav-link has-dropdown"><i class="fas fa-dollar-sign"></i>
                 <span>SPP</span></a>
             <ul class="dropdown-menu">

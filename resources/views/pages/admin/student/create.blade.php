@@ -7,14 +7,11 @@
     <div class="">
         <div class="card" style="width:100%;">
             <div class="card-body">
-                <h2 class="card-title" style="color: black;">Tambah Data Siswa</h2>
+                <h2 class="card-title" style="color: black;">TAMBAH DATA SISWA</h2>
                 <hr>
-                <p class="card-text"> Update data siswa meliputi Email dan Nama Lengkap.
-                    Kita tidak bisa mengubah password guru, Hanya guru yang dapat mengubah passwordnya
-                    sendiri.
+                <p class="card-text"> Dihalaman ini anda dapat membuat data baru siswa, cukup isi data yang diperlukan
+                    dibawah ini
                 </p>
-                <a href="#detail" class="btn btn-primary">Saya paham dan
-                    ingin melanjutkan ⭢</a>
             </div>
         </div>
     </div>

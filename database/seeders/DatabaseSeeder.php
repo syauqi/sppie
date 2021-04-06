@@ -21,7 +21,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'Admin',
             'username' => 'admin',
             'email' => 'admin@gmail.com',
-            'password' => Hash::make('123456'),
+            'password' => Hash::make('admin'),
             'roles' => 'ADMIN',
         ]);
         // Adding user that has student roles
