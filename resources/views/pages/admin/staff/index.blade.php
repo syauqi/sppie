@@ -1,5 +1,6 @@
 @extends('layouts.admin.dashboard')
 
+@section('title', 'Data Petugas')
 @section('content')
 
 <section class="section">

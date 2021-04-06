@@ -1,5 +1,6 @@
 @extends('layouts.admin.dashboard')
 
+@section('title', 'Data Kelas')
 @section('content')
 
 <section class="section">

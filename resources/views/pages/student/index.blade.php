@@ -64,7 +64,7 @@
                         <h4>Transaksi</h4>
                     </div>
                     <div class="card-body">
-                        {{ DB::table('payment')->count() }}
+                        {{ DB::table('payments')->count() }}
                     </div>
                 </div>
             </div>
