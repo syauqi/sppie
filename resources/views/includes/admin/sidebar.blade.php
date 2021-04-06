@@ -28,7 +28,7 @@
                 <li><a class="nav-link" href="{{ route('data-kelas.create') }}">Tambah Data Kelas</a></li>
             </ul>
         </li>
-        <li class=" menu-header">Pengelolaan Data Petugas</li>
+        <li class="menu-header">Pengelolaan Data Petugas</li>
         <li class="nav-item dropdown {{ set_active(['data-petugas.*']) }}">
             <a href="#" class="nav-link has-dropdown"><i class="fas fa-chalkboard-teacher"></i>
                 <span>Petugas</span></a>
@@ -42,12 +42,13 @@
             <a href="#" class="nav-link has-dropdown"><i class="fas fa-dollar-sign"></i>
                 <span>SPP</span></a>
             <ul class="dropdown-menu">
-                <li><a class="nav-link" href="bootstrap-alert.html">Data SPP</a></li>
+                <li><a class="nav-link" href="{{ route('data-spp.index') }}">Data SPP</a></li>
+                <li><a class="nav-link" href="{{ route('data-spp.index') }}">Log History SPP</a></li>
             </ul>
         </li>
     </ul>
 
-    <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
+    <div class=" mt-4 mb-4 p-3 hide-sidebar-mini">
         <a href="https://getstisla.com/docs" class="btn btn-primary btn-lg btn-block btn-icon-split">
             <i class="fas fa-plus"></i> Tambah Transaksi
         </a>
