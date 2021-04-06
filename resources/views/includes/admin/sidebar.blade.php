@@ -49,7 +49,7 @@
     </ul>
 
     <div class=" mt-4 mb-4 p-3 hide-sidebar-mini">
-        <a href="https://getstisla.com/docs" class="btn btn-primary btn-lg btn-block btn-icon-split">
+        <a href="{{ route('data-spp.create') }}" class="btn btn-primary btn-lg btn-block btn-icon-split">
             <i class="fas fa-plus"></i> Tambah Transaksi
         </a>
     </div>

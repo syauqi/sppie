@@ -30,7 +30,7 @@ class SppController extends Controller
      */
     public function create()
     {
-        return view('pages.admin.staff.create');
+        return view('pages.admin.payment.create');
     }
 
     /**
