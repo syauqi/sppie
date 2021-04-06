@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\Student;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Models\Payments;
 use Faker\Provider\ar_SA\Payment;
@@ -16,9 +17,9 @@ class SppController extends Controller
      */
     public function index()
     {
-        $items = Payments::all();
+        $items = Payments::where('name', Auth::user()->name)->get();
 
-        return view('pages.admin.payment.index', [
+        return view('pages.student.payment.index', [
             'items' => $items
         ]);
     }

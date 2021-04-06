@@ -82,34 +82,46 @@
         <div class="col-md-8">
             <div class="card card-primary">
                 <div class="table-responsive bg-white p-4">
-                    <table id="example" class="table table-light align-items-center table-flush">
+                    <table id="example" class="table align-items-center table-flush">
                         <thead class="thead-light">
                             <tr>
-                                <th scope="col">ID</th>
-                                <th scope="col">ID USER</th>
+                                <th scope="col">NISN</th>
+                                <th scope="col">NAMA SISWA</th>
                                 <th scope="col">BULAN</th>
+                                <th scope="col">TAHUN</th>
                                 <th scope="col">TOTAL BAYAR</th>
-                                <th scope="col">KETERANGAN</th>
                             </tr>
                         </thead>
                         <tbody>
                             @forelse ($items as $item)
                             <tr>
                                 <th scope="row">
-                                    {{ $item->id_spp }}
+                                    {{ $item->nisn }}
                                 </th>
                                 <td>
-                                    {{ $item->id_user }}
+                                    {{ $item->name }}
                                 </td>
                                 <td>
                                     {{ $item->month }}
                                 </td>
                                 <td>
-                                    {{ $item->total_payment }}
+                                    {{ $item->year }}
                                 </td>
                                 <td>
-
+                                    {{ $item->total_payment }}
                                 </td>
+
+                                {{-- <td>
+                                    <a href="{{ route('data-siswa.show', $item->id) }}" class="btn btn-primary">
+                                <i class="fa fa-eye"></i>
+                                </a>
+                                f
+                                @method('delete')
+                                <button class="btn btn-danger">
+                                    <i class="fa fa-trash"></i>
+                                </button>
+                                </form>
+                                </td> --}}
                             </tr>
                             @empty
                             @endforelse

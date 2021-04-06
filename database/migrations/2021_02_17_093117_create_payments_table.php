@@ -14,11 +14,16 @@ class CreatePaymentsTable extends Migration
     public function up()
     {
         Schema::create('payments', function (Blueprint $table) {
-            $table->foreignId('id_spp')->constrained('spp');
-            $table->foreignId('id_user')->constrained('users');
+            $table->id();
+            $table->foreignId('id_spp')->nullable();
+            $table->foreignId('id_user')->nullable();
+            $table->string('nisn');
+            $table->string('name');
             $table->string('year');
             $table->string('month');
             $table->integer('total_payment');
+            $table->rememberToken();
+            $table->timestamps();
         });
     }
 

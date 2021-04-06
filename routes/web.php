@@ -52,7 +52,7 @@ Route::prefix('student')
         Route::get('/dashboard', 'App\Http\Controllers\Student\DashboardController@index')
             ->name('student');
 
-        // Route::resource('data-spp', 'App\Http\Controllers\Student\ClassController');
+        Route::resource('data-log-spp', 'App\Http\Controllers\Student\SppController');
     });
 
 require __DIR__ . '/auth.php';

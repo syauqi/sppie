@@ -1,4 +1,4 @@
-@extends('layouts.admin.dashboard')
+@extends('layouts.student.dashboard')
 
 @section('title', 'Data SPP')
 @section('content')
@@ -23,7 +23,6 @@
                                 <th scope="col">BULAN</th>
                                 <th scope="col">TAHUN</th>
                                 <th scope="col">TOTAL BAYAR</th>
-                                <th scope="col">OPSI</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -43,14 +42,6 @@
                                 </td>
                                 <td>
                                     {{ $item->total_payment }}
-                                </td>
-
-                                <td>
-                                    @method('delete')
-                                    <button class="btn btn-danger">
-                                        <i class="fa fa-trash"></i>
-                                    </button>
-                                    </form>
                                 </td>
                             </tr>
                             @empty

@@ -10,6 +10,6 @@ class Payments extends Model
     use HasFactory;
 
     protected $fillable = [
-    'id_spp', 'id_user', 'month', 'total_payment'
+        'id_spp', 'id_user', 'nisn', 'name', 'month', 'year', 'total_payment'
     ];
 }
