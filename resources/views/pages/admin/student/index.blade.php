@@ -1,17 +1,20 @@
 @extends('layouts.admin.dashboard')
 
+@section('title', 'Data Siswa')
 @section('content')
 
 <section class="section">
-    <div class="card">
+    <div class="card card-primary">
         <div class="card-body">
-            <h2 class="card-title text-dark font-weight-800">PENGELOLAAN DATA SISWA</h2>
+            <h2 class="card-title text-dark">PENGELOLAAN DATA SISWA</h2>
+            <hr>
+            <p class="card-text">Berikut merupakan halaman pengelolaan data siswa di aplikasi SPPIE. Anda dapat melihat
+                data siswa, mengupdate data siswa, menambahkan data siswa & menghapus data siswa di halaman ini </p>
         </div>
     </div>
-
     <div class="row">
         <div class="col-md-12">
-            <div class="bg-white p-4" style="border-radius:3px;box-shadow:rgba(0, 0, 0, 0.03) 0px 4px 8px 0px;">
+            <div class="card card-primary p-4">
                 <div class="table-responsive">
                     <table id="example" class="table align-items-center table-flush">
                         <thead class="thead-light">
