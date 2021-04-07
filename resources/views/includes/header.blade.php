@@ -16,12 +16,5 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src=" https://cdn.jsdelivr.net/npm/chart.js@2.8.0"> </script>
     <script src="{{url('main-assets/scripts/utils.js')}}""></script> @stack('css') <title>
-        PUSAKA — Pemantauan Sekolah SMK </title>
+        SPPIE — Sistem Pembayaran SPP </title>
 </head>
-
-<!--Start of Tawk.to Script-->
-<script type=" text/javascript"> var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date(); (function(){ var
-        s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0]; s1.async=true;
-        s1.src='https://embed.tawk.to/60511e30f7ce18270930ca6f/1f0udrs6h' ; s1.charset='UTF-8' ;
-        s1.setAttribute('crossorigin','*'); s0.parentNode.insertBefore(s1,s0); })(); </script> <!--End of Tawk.to
-        Script-->
