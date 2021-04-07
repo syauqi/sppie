@@ -27,7 +27,7 @@
                                 class="font-weight-bold">Sppie</span>
                         </h4>
                         <p class="text-muted">Sebelum Anda memulai, anda harus masuk dengan username dan password yang
-                            telah disediakan</p>
+                            telah disediakan.</p>
                         <!-- Session Status -->
                         <x-auth-session-status class="mb-4" :status="session('status')" />
                         <!-- Validation Errors -->

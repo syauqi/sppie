@@ -15,7 +15,7 @@ return [
     | to use as your default connection for all database work. Of course
     | you may use many connections at once using the Database library.
     |
-    */
+*/
 
     'default' => env('DB_CONNECTION', 'pgsql'),
 
@@ -69,7 +69,7 @@ return [
             'driver' => 'pgsql',
             'url' => 'postgres://sbfjaxroydyttc:418135d149b7ac63af79565e75ab3aab95756e11bec244c094b6f9ed42481549@ec2-3-91-127-228.compute-1.amazonaws.com:5432/d6gvqkhh3jtsrm',
             'host' => $DATABASE_URL["host"],
-            'port' => $DATABASE_URL["host"],
+            'port' => $DATABASE_URL["port"],
             'database' => ltrim($DATABASE_URL["path"], '/'),
             'username' => $DATABASE_URL["user"],
             'password' => $DATABASE_URL["pass"],
