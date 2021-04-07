@@ -326,7 +326,7 @@
                                 <div class="blog-slider__title">Terhubung dengan kami via Instagram</div>
                                 <div class="blog-slider__text">Cukup tekan tombol di kiri kanan bawah di layar anda
                                     dan nikmati chat langsung dengan kami </div>
-                                <a href="https://www.instagram.com/disdikjabar/"
+                                <a href="https://www.instagram.com/smkn1ciamis/"
                                     class="blog-slider__button">Selengkapnya</a>
                             </div>
                         </div>
@@ -337,10 +337,9 @@
                             <div class="blog-slider__content">
                                 <span class="blog-slider__code">KONTAK VIA CUSTOMER SERVICE</span>
                                 <div class="blog-slider__title">Terhubung dengan kami via Call Center</div>
-                                <div class="blog-slider__text">Cukup tekan tombol dibawah atau telfon nomor (022)
-                                    8827728
+                                <div class="blog-slider__text">Cukup tekan tombol dibawah atau telfon nomor 02657712048
                                     dan nikmati call center dengan kami</div>
-                                <a href="tel:(022)8827728" class="blog-slider__button">Selengkapnya</a>
+                                <a href="tel:02657712048" class="blog-slider__button">Selengkapnya</a>
                             </div>
                         </div>
 
@@ -353,7 +352,7 @@
                                 <div class="blog-slider__title">Terhubung dengan kami via email</div>
                                 <div class="blog-slider__text">Cukup tekan tombol dibawah atau segera kirim email ke
                                     disdik.jabarprov.go.id dan kami akan segera membalasnya!</div>
-                                <a href="mailto:disdik@jabarprov.go.id" class="blog-slider__button">Selengkapnya</a>
+                                <a href="mailto:surat@smkn1cms.net" class="blog-slider__button">Selengkapnya</a>
                             </div>
                         </div>
 

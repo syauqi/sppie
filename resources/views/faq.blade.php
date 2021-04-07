@@ -31,18 +31,14 @@
                                 <h2 class="accordion-header" id="headingOne">
                                     <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Apa itu PUSAKA?
+                                        Apa itu SPPIE?
                                     </button>
                                 </h2>
                                 <div id="collapseOne" class="accordion-collapse collapse show"
                                     aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        PUSAKA yang disingkat Sistem Pemantauan Sekolah berfungsi untuk
-                                        menyambungkan pihak sekolah dengan pusat agar pemantauan dapat
-                                        dilakukan dengan terorganisir dan mempercepat respon dari pusat
-                                        dengan adanya laporan online. Dengan adanya PUSAKA, diharapkan
-                                        semua sekolah dapat membuat laporan kerusakan ataupun laporan lain
-                                        dan dapat mempermudah proses Pemantauan
+                                        SPPIE adalah sebuah website yang menyediakan sistem pembayaran SPP online untuk
+                                        mempermudah pembayaran SPP anda agar dapat dilakukan dimanapun, kapanpun
                                     </div>
                                 </div>
                             </div>
@@ -51,16 +47,14 @@
                                     <button class="accordion-button collapsed fw-bold" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
                                         aria-controls="collapseTwo">
-                                        Apa tujuan PUSAKA?
+                                        Apa tujuan SPIE?
                                     </button>
                                 </h2>
                                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        Dengan adanya PUSAKA, kemudahan dalam melapor kondisi sekolah rutin dapat
-                                        dirasakan. Dengan adanya fitur laporan online, pemantau dapat dengan mudah
-                                        menerima informasi dari sekolah yang sedang dilanda kerusakan/bencana dengan
-                                        cepat tanpa harus datang ke lokasi.
+                                        SPPIE dibuat untuk membuat kemudahan pengecekan data spp agar dapat diakses
+                                        dimana saja dan kapan saja!
                                     </div>
                                 </div>
                             </div>
@@ -69,21 +63,20 @@
                                     <button class="accordion-button collapsed fw-bold" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
                                         aria-controls="collapseThree">
-                                        Bagaimana cara melapor dengan PUSAKA?
+                                        Bagaimana cara menggunakan SPPIE?
                                     </button>
                                 </h2>
                                 <div id="collapseThree" class="accordion-collapse collapse"
                                     aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        1.Ambil foto bagian sekolah yang perlu pihak sekolah laporkan
-                                        Segera foto bagian sekolah yang terkena dampak bencana atau terkena dampak hal
-                                        lainnya yang ingin dilaporkan dan dipantau oleh pusat. <br>
-                                        2.Login kedalam aplikasi PUSAKA dengan menekan tombol masuk di bagian menu
-                                        Lalu anda dapat login kedalam aplikasi kami, untuk segera melaporkan bagian
-                                        sekolah yang ingin dilaporkan atau ingin kami pantau. <br>
-                                        3. Setelah masuk, Upload foto laporan dan isi form yang telah kami sediakan
-                                        Siapkan gambar yang telah anda ambil dan isi detail form yang telah kami
-                                        sediakan, setelah itu data anda akan kami pantau dan kami proses!
+                                        1.
+                                        Login ke aplikasi SPPIE Menggunakan Username & Password yang telah diberikan
+                                        Segera login dengan username & password yang telah diberikan, setelah itu anda
+                                        dapat langsung masuk ke aplikasi kami <br>
+                                        2.Segera pilih menu "Data SPP" di sidebar kiri anda, lalu anda dapat melihat
+                                        history pembayaran SPP anda
+                                        Setelah itu anda dapat melihat riwayat pembayaran anda dimana saja dan kapan
+                                        saja! <br>
                                     </div>
                                 </div>
                             </div>
@@ -105,11 +98,10 @@
                 0 33.5px 33.5px rgba(0, 0, 0, 0.034),
                 0 53.4px 53.4px rgba(0, 0, 0, 0.039),
                 0 100px 100px rgba(0, 0, 0, 0.05);">
-                    <h1 class="fw-bold">Lakukan lebih dengan PUSAKA</h1>
-                    <p class="lead">Tunggu apa lagi? segera laporkan kondisi sekolah anda ke pusat untuk segera di
-                        pantau
-                        dan segera ditindak sesuai tindakan yang akan dilakukan</p>
-                    <a class="text-white" href="{{url('/login')}}">Masuk
+                    <h1 class="fw-bold">Lakukan lebih dengan SPPIE</h1>
+                    <p class="lead">Tunggu apa lagi? segera coba aplikasi SPPIE agar anda dapat melihat history
+                        pembayaran anda dimana saja kapan saja</p>
+                    <a class="text-white" href="{{url('/auth')}}">Masuk
                         &raquo;</a>
                 </div>
             </div>
