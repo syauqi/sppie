@@ -43,7 +43,7 @@ Route::prefix('staff')
         Route::get('/dashboard', 'App\Http\Controllers\Staff\DashboardController@index')
             ->name('staff');
 
-        // Route::resource('data-spp', 'App\Http\Controllers\Student\ClassController');
+        Route::resource('data-spp-siswa', 'App\Http\Controllers\Staff\SppController');
     });
 
 Route::prefix('student')
