@@ -21,6 +21,6 @@ class IsStaff
             return $next($request);
         }
 
-        return redirect('/login');
+        return redirect('/');
     }
 }

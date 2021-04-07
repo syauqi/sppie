@@ -3,7 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
-Route::get('/', function () {
+
+Route::get('/auth', function () {
     if (Auth::check()) {
         switch (Auth::user()->roles) {
             case 'ADMIN':
@@ -16,14 +17,18 @@ Route::get('/', function () {
                 return redirect(route('student'));
                 break;
             default:
-                return url('/login');
+                return view('welcome');
                 break;
         }
     } else {
-        redirect(route('login'));
+        return view('welcome');
     };
-})
-    ->middleware(['auth']);
+})->middleware(['auth']);
+
+Route::get('/', function () {
+    return view('welcome');
+})->name('index')
+    ->middleware(['guest']);
 
 Route::prefix('admin')
     ->middleware(['auth', 'admin'])

@@ -1,0 +1,171 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+nav {
+    background-color: white;
+    ul .nav-item {
+        font-size: 14px;
+        color: black;
+        font-weight: 500;
+    }
+
+    .btn {
+        font-weight: 600;
+        box-shadow: 0 2px 25px rgba(11, 94, 215, 0.2);
+        border-radius: 30px;
+    }
+}
+
+.nav-on-scroll {
+    background-color: white;
+    box-shadow: 0 0.8px 8.7px rgba(0, 0, 0, 0.004),
+        0 1.8px 19.5px rgba(0, 0, 0, 0.007), 0 3.1px 33.3px rgba(0, 0, 0, 0.008),
+        0 4.7px 51.3px rgba(0, 0, 0, 0.009), 0 7px 76px rgba(0, 0, 0, 0.011),
+        0 10.3px 111.7px rgba(0, 0, 0, 0.012),
+        0 15.4px 167.4px rgba(0, 0, 0, 0.013),
+        0 24.5px 266.8px rgba(0, 0, 0, 0.016), 0 46px 500px rgba(0, 0, 0, 0.02);
+}
+
+header {
+    h1 {
+        font-size: 48px;
+        letter-spacing: -1.5px;
+        font-weight: 700;
+        color: black;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    small {
+        font-weight: 600;
+    }
+
+    .btn-primary {
+        box-shadow: 0 2px 25px rgba(11, 94, 215, 0.2);
+    }
+}
+
+.about-section {
+    small {
+        font-weight: 700;
+    }
+
+    h1 {
+        font-weight: 700;
+        color: black;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+.about-section-2 {
+    small {
+        font-weight: 700;
+    }
+
+    h1 {
+        font-weight: 700;
+        color: black;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .btn-primary {
+        box-shadow: 0 2px 25px rgba(11, 94, 215, 0.2);
+    }
+}
+
+.map-section {
+    small {
+        font-weight: 700;
+    }
+
+    h1 {
+        font-weight: 700;
+        color: black;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+.instruction-section {
+    .header-instruction {
+        h1 {
+            font-weight: 700;
+            font-size: 36px;
+            color: black;
+        }
+    }
+
+    small {
+        font-weight: 700;
+    }
+
+    .icon-top {
+        color: white;
+        font-size: 20px;
+        line-height: 30px;
+        box-shadow: rgba(27, 30, 41, 0.08) 0px 16px 20px 0px;
+        border-radius: 24px;
+    }
+
+    h1 {
+        font-weight: 600;
+        font-size: 28px;
+        color: black;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+.end-section {
+    color: white;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 20px -20px;
+
+    h3 {
+        font-weight: 600;
+    }
+}
+
+footer {
+    color: white;
+    .footer-header {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .footer-core-info {
+        font-size: 16px;
+    }
+    .footer-link {
+        line-height: 24px;
+    }
+}
+
+.label-top {
+    font-weight: 700;
+}
