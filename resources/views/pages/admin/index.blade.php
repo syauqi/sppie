@@ -75,7 +75,7 @@
                 </div>
                 <div class="card-body">
                     <p>Jika anda ingin segera melakukan pembayaran atau melakukan transaksi SPP silahkan klik disini</p>
-                    <a href="" class="btn btn-primary btn-pill">Tambah Transaksi →</a>
+                    <a href="{{route('data-spp.create')}}" class="btn btn-primary btn-pill">Tambah Transaksi →</a>
                 </div>
             </div>
         </div>
