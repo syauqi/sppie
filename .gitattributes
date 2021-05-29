@@ -3,5 +3,6 @@
 *.js linguist-detectable=false
 *.html linguist-detectable=false
 *.blade.php linguist-detectable=false
+*.blade linguist-detectable=false
 *.php linguist-detectable=true
 CHANGELOG.md export-ignore
